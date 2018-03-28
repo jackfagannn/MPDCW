@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars = "vertical"
+    android:scrollbarStyle="insideInset"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_weight="0.33"
+            app:srcCompat="@drawable/traffic_scotland_logo" />
+
+        <Button
+            android:id="@+id/Button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Current Incidents"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Roadworks"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Planned Roadworks"
+            android:textStyle="bold" />
+
+        <!--<Button-->
+            <!--android:id="@+id/Button4"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Floodline" />-->
+
+
+        <EditText
+            android:id="@+id/filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:ems="10"
+            android:hint="Filter by name of Road or Place"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/urlInput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</ScrollView>
+
+
+
